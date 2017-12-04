@@ -195,6 +195,10 @@
             By looking at the features expressed through deep dream, we can start 
             to build an intuition about underlying features. 
 
+            Objects that are expressed in the image align more with the network's weights.
+            <br><br>
+            Repeated calling then excenuates the features further as we have already added them once. 
+
             <br>
             <br> You may want to download the ipython notebook due to its size. It has visualizations for a few layers ran so
             that you don't need to!
@@ -207,26 +211,30 @@
 
       <!-- original image -->
       <div class="row">
+        <div class="col-md-12">
+            <h3 class='page-header'>Death Valley</h3>
+        </div>
         <div class="col-md-7">
           <div class="image-container">
             <img class="img-fluid rounded mb-3 mb-md-0" src="images/deepdream/Stadium.jpg">
           </div>
         </div>
         <div class="col-md-5">
-          <h3 class='page-header'>Death Valley</h3>
           <p>This is original image of Death Valley, the pride and joy of Clemson!</p>
         </div>
       </div>
 
       <!-- death valley but with flowers -->
       <div class="row">
+        <div class="col-md-12">
+            <h3 class='page-header'>Death Valley Flowerfied</h3>
+        </div>
         <div class="col-md-7">
           <div class="image-container">
             <img class="img-fluid rounded mb-3 mb-md-0" src="images/deepdream/deathValley_lowerFeatures.png">
           </div>
         </div>
         <div class="col-md-5">
-          <h3 class='page-header'>Death Valley Flowerfied</h3>
           <p>This is the image after running it through the deep dream algorithm multiple times, enhancing the features that
             express flowers.</p>
           <p>This is expressing lower level node features in the deep learning network.</p>
@@ -239,13 +247,15 @@
 
   <!-- death valley but with flowers -->
   <div class="row">
+    <div class="col-md-12">
+        <h3 class='page-header'>Death Valley tiles</h3>
+    </div>
       <div class="col-md-7">
         <div class="image-container">
           <img class="img-fluid rounded mb-3 mb-md-0" src="images/deepdream/deathValley_higherFeatures.jpeg">
         </div>
       </div>
       <div class="col-md-5">
-        <h3 class='page-header'>Death Valley tiles</h3>
         <p>This is expressing high level node features in the deep learning network.</p>
         <p>We can see that there are only minimal changes to the image now.</p>  
       </div>
