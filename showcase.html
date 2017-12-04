@@ -191,13 +191,11 @@
         <div class="col-md-12 ">
           <p>Generate psychedelic images algorithmically! This showcase warps Death Valley into a trippy stadium using the Google
             DeepDream algorithm and the Tensorflow framework.
-            <br><br>
-            By looking at the features expressed through deep dream, we can start 
-            to build an intuition about underlying features. 
-
-            Objects that are expressed in the image align more with the network's weights.
-            <br><br>
-            Repeated calling then excenuates the features further as we have already added them once. 
+            <br>
+            <br> By looking at the features expressed through deep dream, we can start to build an intuition about underlying
+            features. Objects that are expressed in the image align more with the network's weights.
+            <br>
+            <br> Repeated calling then excenuates the features further as we have already added them once.
 
             <br>
             <br> You may want to download the ipython notebook due to its size. It has visualizations for a few layers ran so
@@ -212,7 +210,7 @@
       <!-- original image -->
       <div class="row">
         <div class="col-md-12">
-            <h3 class='page-header'>Death Valley</h3>
+          <h3 class='page-header'>Death Valley</h3>
         </div>
         <div class="col-md-7">
           <div class="image-container">
@@ -227,7 +225,7 @@
       <!-- death valley but with flowers -->
       <div class="row">
         <div class="col-md-12">
-            <h3 class='page-header'>Death Valley Flowerfied</h3>
+          <h3 class='page-header'>Death Valley Flowerfied</h3>
         </div>
         <div class="col-md-7">
           <div class="image-container">
@@ -238,32 +236,66 @@
           <p>This is the image after running it through the deep dream algorithm multiple times, enhancing the features that
             express flowers.</p>
           <p>This is expressing lower level node features in the deep learning network.</p>
-          <p>We can see that there is a lot of merging of aspects of the image.</p>  
+          <p>We can see that there is a lot of merging of aspects of the image.</p>
+        </div>
+      </div>
+
+
+      <!-- death valley but with flowers -->
+      <div class="row">
+        <div class="col-md-12">
+          <h3 class='page-header'>Death Valley tiles</h3>
+        </div>
+        <div class="col-md-7">
+          <div class="image-container">
+            <img class="img-fluid rounded mb-3 mb-md-0" src="images/deepdream/deathValley_higherFeatures.jpeg">
+          </div>
+        </div>
+        <div class="col-md-5">
+          <p>This is expressing high level node features in the deep learning network.</p>
+          <p>We can see that there are only minimal changes to the image now.</p>
+        </div>
+      </div>
+
+
+      <div class="row">
+        <div class="col-md-12">
+          <h3 class='page-header'>Looking at features through random noise enhancement</h3>
+        </div>
+        <div class="col-md-7">
+          <div class="image-container">
+            <img class="img-fluid rounded mb-3 mb-md-0" src="images/deepdream/feature_5.jpeg">
+          </div>
+        </div>
+        <div class="col-md-5">
+          <p>
+            This is an interesting high level (near top of network) feature. We can find interesting
+            channels by finding weights that maximize the sum of the outputs. The image above was
+            visualized by running a version of the deep dream algorithm on random noise.
+          </p>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-md-7">
+          <div class="image-container">
+            <img class="img-fluid rounded mb-3 mb-md-0" src="images/deepdream/deathValley_5.jpeg">
+          </div>
+        </div>
+        <div class="col-md-5">
+          <p>
+            We can see how those features manifest into its changes to the stadium.
+          </p>
         </div>
       </div>
     </div>
   </div>
 
 
-  <!-- death valley but with flowers -->
-  <div class="row">
-    <div class="col-md-12">
-        <h3 class='page-header'>Death Valley tiles</h3>
-    </div>
-      <div class="col-md-7">
-        <div class="image-container">
-          <img class="img-fluid rounded mb-3 mb-md-0" src="images/deepdream/deathValley_higherFeatures.jpeg">
-        </div>
-      </div>
-      <div class="col-md-5">
-        <p>This is expressing high level node features in the deep learning network.</p>
-        <p>We can see that there are only minimal changes to the image now.</p>  
-      </div>
-    </div>
-  </div>
-</div>
-    
-    
+
+
+
+
 
   <footer class="py-5 bg-dark">
     <div class="container">
